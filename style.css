@@ -1,0 +1,344 @@
+ /* Designs body tag */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .left-column,
+            .right-column {
+                flex: 1 1 100%;
+                order: 0;
+            }
+
+            input[type="number"] {
+                font-size: 0.9em;
+            }
+
+            .button-group button {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    /* Sets the font for the page */
+    display: flex;
+    /* Uses flexbox for layout */
+    justify-content: center;
+    /* Centers the content horizontally */
+    padding-top: 30px;
+    /* Adds padding on top */
+    min-height: 100vh;
+    min-width:fit-content;
+    /* Ensures the page takes up the full viewport height */
+    margin: 0;
+    /* Removes default margin */
+    background-color: #e0f7fa;
+    /* Sets the background color of the page */
+    overflow-y: auto;
+    /* Allows vertical scrolling */
+}
+
+
+/* Custom tag for output container */
+
+.container {
+    display: flex;
+    /* Uses flexbox for layout */
+    flex-direction: row;
+    /* Aligns children elements in a row */
+    width: 1200px;
+    /* Sets the width of the container */
+    padding: 30px;
+    /* Adds padding inside the container */
+    background-color: #ffffff;
+    /* Sets the background color of the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow to the container */
+    border-radius: 10px;
+    /* Rounds the corners of the container */
+}
+
+
+/* Setting location for Left Column */
+
+.left-column {
+    flex: 1;
+    /* Makes this column take up equal space */
+    margin-right: 10px;
+    /* Adds margin between columns */
+}
+
+
+/*  Setting location for right column */
+
+.right-column {
+    flex: 1;
+    /* Makes this column take up equal space */
+    background-color: #f1f1f1;
+    /* Sets background color */
+    padding: 10px;
+    /* Adds padding inside the column */
+    border-radius: 10px;
+    /* Rounds the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds shadow */
+}
+
+h1 {
+    text-align: center;
+    /* Centers the text */
+    color: #cc2d11;
+    /* Sets the color of the heading */
+    font-size: 18px;
+    /* Sets font size */
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    font-weight: bold;
+}
+
+/*  Defination for heading second tag */
+
+h2 {
+    text-align: center;
+    /* Centers the text */
+    color: #00796b;
+    /* Sets the color of the heading */
+    font-size: 1.5em;
+    /* Sets font size */
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+}
+
+
+/* Styles for the form group container */
+
+.form-group {
+    margin-bottom: 15px;
+    /* Adds bottom margin to the form group */
+}
+
+
+/* Styles for the label element inside the form group */
+
+.form-group label {
+    display: block;
+    /* Makes the label block-level so it occupies the full width */
+    margin-bottom: 8px;
+    /* Adds space between the label and the input field */
+    font-weight: bold;
+    /* Makes the label text bold */
+    color: #00796b;
+    /* Sets the label color to a shade of teal */
+}
+
+
+/* Styles for the input field inside the form group */
+
+.form-group input {
+    width: 100%;
+    /* Makes the input field take up the full width of its parent */
+    padding: 10px;
+    /* Adds padding inside the input field for better spacing */
+    border: 1px solid #b0bec5;
+    /* Sets a light grey border around the input */
+    border-radius: 5px;
+    /* Rounds the corners of the input field */
+    font-size: 1em;
+    /* Sets the font size of the input text */
+    box-sizing: border-box;
+    /* Ensures padding is included in the input's width */
+}
+
+
+/* Styles for the radio button group */
+
+.radio-group {
+    display: flex;
+    /* Uses flexbox layout for radio buttons */
+    justify-content: space-between;
+    /* Distributes radio buttons evenly across the container */
+    margin-bottom: 15px;
+    /* Adds space below the radio group */
+}
+
+
+/* Styles for the button group container */
+
+.button-group {
+    display: flex;
+    /* Uses flexbox layout for buttons */
+    justify-content: space-between;
+    /* Distributes buttons evenly across the container */
+    gap: 10px;
+    /* Adds a gap between each button */
+}
+
+
+/* General button styles */
+
+button {
+    flex: 1;
+    /* Ensures buttons take up equal space in the container */
+    padding: 10px;
+    /* Adds padding inside the button */
+    border: none;
+    /* Removes the border around the button */
+    border-radius: 5px;
+    /* Rounds the corners of the button */
+    font-size: 1em;
+    /* Sets the font size of the button text */
+    font-weight: bold;
+    /* Makes the button text bold */
+    color: #ffffff;
+    /* Sets the button text color to white */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Adds smooth transition on background color change */
+}
+
+
+/* Styles for the first button (Primary button) */
+
+button:first-child {
+    background-color: #00796b;
+    /* Sets the background color for the first button */
+}
+
+
+/* Styles for the second button (Secondary button) */
+
+button:last-child {
+    background-color: #b0bec5;
+    /* Sets the background color for the second button */
+}
+
+
+/* Styles for the result container */
+
+.result {
+    background-color: #ffffff;
+    /* Sets a white background color for the result container */
+    padding: 30px;
+    /* Adds padding inside the result container */
+    border-radius: 8px;
+    /* Rounds the corners of the result container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow around the result container */
+    margin-top: 30px;
+    /* Adds space above the result container */
+    width: 80%;
+    /* Sets the width of the result container to 80% of its parent */
+    max-width: 1000px;
+    /* Sets a maximum width for the result container */
+    margin-left: auto;
+    /* Centers the container horizontally */
+    margin-right: auto;
+    /* Centers the container horizontally */
+}
+
+
+/* Styles for the heading inside the result container */
+
+.result h1 {
+    font-size: 18px;
+    /* Sets the font size of the heading */
+    text-align: left;
+    /* Aligns the heading text to the left */
+    color: #fa30    30;
+    /* Sets the color of the heading to teal */
+    margin-bottom: 10px;
+    /* Adds space below the heading */
+}
+
+
+/* Styles for the result table */
+
+.result-table {
+    width: 100%;
+    /* Makes the table take up the full width of its container */
+    border-collapse: collapse;
+    /* Ensures table borders are collapsed into a single border */
+    margin-top: 20px;
+    /* Adds space above the table */
+}
+
+
+/* Styles for the table headers and data cells */
+
+.result-table th,
+.result-table td {
+    padding: 3px 5px;
+    /* Adds padding inside the table cells */
+    text-align: left;
+    /* Aligns the text inside table cells to the left */
+    border: 1px solid #ddd;
+    /* Adds a light grey border around the table cells */
+}
+
+
+/* Styles for table headers */
+
+.result-table th {
+    background-color: #00796b;
+    /* Sets the background color for the header cells */
+    color: #ffffff;
+    /* Sets the text color of the header cells to white */
+    font-weight: bold;
+    /* Makes the header text bold */
+}
+
+
+/* Styles for the table data cells */
+
+.result-table td {
+    background-color: #f9f9f9;
+    /* Sets a light grey background for data cells */
+}
+
+
+/* Styles for even-numbered rows (zebra stripes effect) */
+
+.result-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+    /* Sets a slightly darker grey background for even rows */
+}
+
+
+/* Styles for rows on hover */
+
+.result-table tr:hover {
+    background-color: #e0f7fa;
+    /* Changes the background color of rows when hovered */
+}
+
+
+/* Styles for table data cells */
+
+.result-table td {
+    font-size: 1em;
+    /* Sets the font size of the table cell content */
+    color: #004d40;
+    /* Sets the text color for table cells */
+}
+
+
+/* Styles for the first data cell in each row (usually a label or identifier) */
+
+.result-table td:first-child {
+    font-weight: bold;
+    /* Makes the text in the first column bold */
+    color: #00796b;
+    /* Sets the text color of the first column to teal */
+}
+
+
+/* Styles for the last data cell in each row */
+
+.result-table td:last-child {
+    color: #004d40;
+    /* Sets the text color of the last column to a darker shade of teal */
+}
