@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <!--title for the main program-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Opening the body of the HTML document -->
+    <div class="container">
+        <!-- Container that holds both left and right columns -->
+        <!-- Left Column for Inputs -->
+        <div class="left-column">
+            <h1 style="font-size: 30px;">Tax Calculator</h1>
+            <!-- Monthly Income Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for monthly income -->
+                <label for="monthlyIncome">Monthly Income (Rs.):</label>
+                <!-- Label for monthly income input -->
+                <input type="number" id="monthlyIncome" placeholder="Enter your monthly income" required>
+                <!-- Input field for monthly income -->
+            </div>
+
+            <!-- Dearness Allowance Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for dearness allowance -->
+                <label for="dearnessAllowance">Dearness Allowance (Monthly) (Rs.):</label>
+                <!-- Label for dearness allowance input -->
+                <input type="number" id="dearnessAllowance" placeholder="Enter dearness allowance" required>
+                <!-- Input field for dearness allowance -->
+            </div>
+
+            <!-- Festival Allowance Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for festival allowance -->
+                <label for="festivalAllowance">Festival Allowance (Yearly) (Rs.):</label>
+                <!-- Label for festival allowance input -->
+                <input type="number" id="festivalAllowance" placeholder="Enter festival allowance" required>
+                <!-- Input field for festival allowance -->
+            </div>
+
+            <!-- Clothing Allowance Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for clothing allowance -->
+                <label for="clothingAllowance">Clothing Allowance (Yearly) (Rs.):</label>
+                <!-- Label for clothing allowance input -->
+                <input type="number" id="clothingAllowance" placeholder="Enter clothing allowance" required>
+                <!-- Input field for clothing allowance -->
+            </div>
+
+            <!-- Life Insurance Premium Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for life insurance -->
+                <label for="insurance">Life Insurance Premium (Rs.):</label>
+                <!-- Label for life insurance premium input -->
+                <input type="number" id="insurance" placeholder="Enter insurance premium" required>
+                <!-- Input field for life insurance premium -->
+            </div>
+
+            <!-- Donation Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for donation -->
+                <label for="Donation">Donations (Yearly) (Rs.):</label>
+                <!-- Label for donation input -->
+                <input type="number" id="donation" placeholder="Enter festival allowance" required>
+                <!-- Input field for Donation -->
+            </div>
+
+            <!-- EPF Percentage Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for EPF percentage -->
+                <label for="epf">Employees' Provident Fund (EPF) Percentage (%):</label>
+                <!-- Label for EPF percentage input -->
+                <input type="number" id="epf" placeholder="Enter EPF percentage" required>
+                <!-- Input field for EPF percentage -->
+            </div>
+
+            <!-- CIT Input -->
+            <div class="form-group">
+                <!-- Form group to hold label and input for CIT -->
+                <label for="cit">Citizen Investment Trust (CIT) (Monthly) (Rs.):</label>
+                <!-- Label for CIT input -->
+                <input type="number" id="cit" placeholder="Enter CIT amount" required>
+                <!-- Input field for CIT -->
+            </div>
+
+            <!-- Filing Status Radio Buttons -->
+            <div class="form-group">
+                <!-- Form group for filing status selection -->
+                <label>Filing Status:</label>
+                <!-- Label for filing status options -->
+                <div class="radio-group">
+                    <!-- Container for radio buttons for filing status -->
+                    <label>
+                        <input type="radio" name="filingStatus" value="single" checked> Single
+                        <!-- Radio button for single status -->
+                    </label>
+                    <label>
+                        <input type="radio" name="filingStatus" value="married"> Married
+                        <!-- Radio button for married status -->
+                    </label>
+                </div>
+            </div>
+
+            <!-- Button Group -->
+            <div class="button-group">
+                <!-- Container for the buttons -->
+                <button type="button" onclick="calculateTax()">Calculate Tax</button>
+                <!-- Button to trigger tax calculation -->
+                <button type="button" onclick="resetFields()">Reset</button>
+                <!-- Button to reset the input fields -->
+            </div>
+        </div>
+
+        <!-- Right Column for Output -->
+        <div class="right-column">
+            <!-- Right column where the results will be displayed -->
+            <div class="result" id="result"></div>
+            <!-- Element to display the result of the tax calculation -->
+        </div>
+
+        <!-- Detailed Tax Slip -->
+        <pre id="taxSlip"></pre>
+        <!-- Preformatted text area to display detailed tax slip -->
+    </div>
+    <!--closing the container of columns-->
+ <script src="script.js"></script> 
+</body>
+</html>
