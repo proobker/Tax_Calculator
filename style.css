@@ -104,7 +104,7 @@ h1 {
 h2 {
     text-align: center;
     /* Centers the text */
-    color: #00796b;
+    color: #000279;
     /* Sets the color of the heading */
     font-size: 1.5em;
     /* Sets font size */
@@ -130,7 +130,7 @@ h2 {
     /* Adds space between the label and the input field */
     font-weight: bold;
     /* Makes the label text bold */
-    color: #00796b;
+    color: #000279;
     /* Sets the label color to a shade of teal */
 }
 
@@ -204,7 +204,7 @@ button {
 /* Styles for the first button (Primary button) */
 
 button:first-child {
-    background-color: #00796b;
+    background-color: #000279;
     /* Sets the background color for the first button */
 }
 
@@ -283,7 +283,7 @@ button:last-child {
 /* Styles for table headers */
 
 .result-table th {
-    background-color: #00796b;
+    background-color: #000279;
     /* Sets the background color for the header cells */
     color: #ffffff;
     /* Sets the text color of the header cells to white */
@@ -321,7 +321,7 @@ button:last-child {
 .result-table td {
     font-size: 1em;
     /* Sets the font size of the table cell content */
-    color: #004d40;
+    color: #000279;
     /* Sets the text color for table cells */
 }
 
@@ -331,7 +331,7 @@ button:last-child {
 .result-table td:first-child {
     font-weight: bold;
     /* Makes the text in the first column bold */
-    color: #00796b;
+    color: #000279;
     /* Sets the text color of the first column to teal */
 }
 
@@ -339,6 +339,6 @@ button:last-child {
 /* Styles for the last data cell in each row */
 
 .result-table td:last-child {
-    color: #004d40;
+    color: #000279;
     /* Sets the text color of the last column to a darker shade of teal */
 }
